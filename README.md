@@ -423,7 +423,7 @@ We welcome contributions to make legal justice more accessible!
 - **Twilio** for reliable communication infrastructure
 - **Open Source Community** for foundational libraries
 
---- 
+---
 
 ## 📄 **License**
 

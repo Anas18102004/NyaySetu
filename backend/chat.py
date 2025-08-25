@@ -5,10 +5,10 @@ from google.adk.runners import Runner
 from backend.core_agent.agent import root_agent
 from google.genai.types import Content, Part
 
-# Set the Google API key for the ADK agent
-GOOGLE_API_KEY = ""
-os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
-genai.configure(api_key=GOOGLE_API_KEY)
+# Configure Google API key from environment only (no hardcoded/default empty value)
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+if GOOGLE_API_KEY:
+    genai.configure(api_key=GOOGLE_API_KEY)
 async def chat_with_law_agent(user_message, session_id=None):
     app_name = "my_agent_app"
     user_id = "user123"

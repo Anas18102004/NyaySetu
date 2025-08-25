@@ -109,7 +109,7 @@ This system is specifically designed to bridge the legal knowledge gap for local
 ## 🚀 **Quick Start**
 
 ### Prerequisites
-- 🐍 **Python 3.9+**
+- 🐍 **Python 3.11+** (Portia SDK requires Python >= 3.11)
 - 📦 **Node.js 16+**
 - 🐳 **Docker & Docker Compose**
 - 🔑 **API Keys**: Google AI, ElevenLabs, Twilio (optional)
@@ -292,7 +292,7 @@ POST /ivr/initiate_call    # Handle incoming calls
 POST /ivr/language_select  # Language selection
 ```
 
-#### 🤝 Portia (Optional)
+#### 🤝 Portia
 ```bash
 POST /portia/chat                      # Separate Portia-powered chatbot
 POST /portia/rag/run-plan              # Crawl/ingest legal sources → upsert to Qdrant
@@ -311,7 +311,8 @@ POST /portia/compliance/check          # Compliance audit for provided text
 # Google AI Configuration
 GOOGLE_API_KEY=your_google_gemini_api_key
 
-# Portia (Optional)
+# Portia (Required)
+# Must be enabled for full functionality and hackathon criteria
 PORTIA_ENABLED=true
 PORTIA_DEFAULT_MODEL=gemini-2.5-flash
 

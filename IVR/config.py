@@ -14,6 +14,3 @@ def load_config():
         # Add more as needed
         "NGROK_BASE_URL": os.getenv("NGROK_BASE_URL"),
     }
-
-
-print(load_config())

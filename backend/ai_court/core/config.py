@@ -13,10 +13,10 @@ class Settings(BaseSettings):
     CORS_ORIGINS: str = Field(default="*", env="CORS_ORIGINS")  # Consider restricting in production
     UPLOADS_DIR: str = "uploads"
 
-    QDRANT_URL: str = "https://b3652dfa-d7f8-4c59-955f-5a4e3a120f2a.europe-west3-0.gcp.cloud.qdrant.io"
-    QDRANT_API_KEY: Optional[str] = Field(default="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.QPy61fUmmz_SF_JjvlAD7vQ8BfNeU2zFyziTKYY-keQ", env="QDRANT_API_KEY")  # Hardcoded for development
+    QDRANT_URL: Optional[str] = Field(default=None, env="QDRANT_URL")
+    QDRANT_API_KEY: Optional[str] = Field(default=None, env="QDRANT_API_KEY")
 
-    GOOGLE_API_KEY: Optional[str] = Field(default="AIzaSyDFn9PgAJi9vyCPEAMMM45QpMG9DTm-uE0", env="GOOGLE_API_KEY")  # Hardcoded for development
+    GOOGLE_API_KEY: Optional[str] = Field(default=None, env="GOOGLE_API_KEY")
     GEMINI_MODEL_NAME: str = "gemini-1.5-flash"
     
     # ElevenLabs API Key for voice synthesis

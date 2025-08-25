@@ -10,8 +10,8 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-# Configuration
-DEEPGRAM_API_KEY = "27cae19012898c181b19b61be3a4f90362c1dde6"
+# Configuration (read from environment only; no hardcoded secrets)
+DEEPGRAM_API_KEY = os.getenv("DEEPGRAM_API_KEY")
 DEEPGRAM_API_URL = "https://api.deepgram.com/v1/listen?model=nova-2"  # Using Nova-2 as it's the fastest model
 
 class SpeechRecognitionService:

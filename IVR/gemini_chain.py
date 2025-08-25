@@ -11,10 +11,10 @@ from utils import extract_topic, estimate_confidence
 # Load environment variables
 load_dotenv()
 
-# Configure Gemini API
-GEMINI_API_KEY = "AIzaSyBS6o-SfwpPDXoayAdnlZ0fOWbvSxdgx6c"
+# Configure Gemini API via environment (no hardcoded keys)
+GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
-    raise ValueError("GEMINI_API_KEY environment variable not set")
+    raise ValueError("GOOGLE_API_KEY/GEMINI_API_KEY environment variable not set")
 
 genai.configure(api_key=GEMINI_API_KEY)
 

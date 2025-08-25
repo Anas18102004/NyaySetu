@@ -3,7 +3,7 @@
 <div align="center">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/python-v3.9+-blue.svg)](https://www.python.org/downloads/)
+[![Python](https://img.shields.io/badge/python-v3.11+-blue.svg)](https://www.python.org/downloads/)
 [![React](https://img.shields.io/badge/react-v18.3.1+-green.svg)](https://reactjs.org/)
 [![FastAPI](https://img.shields.io/badge/fastapi-latest-green.svg)](https://fastapi.tiangolo.com/)
 [![AI Powered](https://img.shields.io/badge/AI-Powered-purple.svg)](https://ai.google.dev/)
@@ -47,10 +47,10 @@ This system is specifically designed to bridge the legal knowledge gap for local
 - **📱 Accessible by Phone:** Users can easily call a dedicated number to interact with the AI assistant in their language of choice.
 - **💡 Simple and Intuitive:** Designed for ease of use, making legal guidance straightforward for people in both urban and rural areas.
 
-### 🤝 **Portia Labs AI (Optional)**
-- Agentic workflows for research, ingestion, triage, and assistants
-- Runs plans using your existing Gemini key via Portia SDK
-- Optional endpoints: `/portia/chat`, `/portia/rag/run-plan`, `/portia/appointments/triage`, `/portia/evidence/assistant`, `/portia/compliance/check`
+### 🤝 **Portia Labs AI (Required)**
+- Agentic workflows for research, ingestion, triage, evidence, compliance, and assistants
+- Uses your Gemini key via Portia SDK
+- Core endpoints: `/portia/chat`, `/portia/rag/run-plan`, `/portia/appointments/triage`, `/portia/evidence/assistant`, `/portia/compliance/check`
 
 ### 📄 **Intelligent Document Processing**
 - **📊 AI Summarization**: Extract key insights from legal documents

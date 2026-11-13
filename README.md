@@ -356,6 +356,30 @@ graph TB
 
 ---
 
+## 📁 Repository Structure
+
+```text
+NyaySetu/
+├── backend/                    # FastAPI REST application & agentic graph core
+│   ├── app/                    # LangGraph agents, case memory, and RAG retrieval
+│   ├── tests/                  # Pytest unit and regression test suite
+│   └── requirements.txt        # Python backend dependencies
+├── frontend/                   # Responsive React / TypeScript web user interface
+│   ├── src/                    # Deliberation timeline, chat view, and voice controls
+│   └── package.json            # Node.js dependencies & scripts
+├── IVR/                        # Twilio telephony & Whisper speech integration
+├── nginx/                      # Reverse proxy & SSL gateway configuration
+├── docs/                       # Architectural specs and courtroom protocols
+├── Dockerfile                  # Container definition for application microservice
+├── docker-compose.yml          # Multi-container orchestration (Backend, Frontend, DB)
+├── pyproject.toml              # Modern Python package specification (uv / pip)
+├── requirements.txt            # Root dependencies
+├── .env.example                # Sanitized environment variable template
+└── README.md                   # Full system architecture documentation
+```
+
+---
+
 ## 🧪 **Testing**
 
 ```bash
